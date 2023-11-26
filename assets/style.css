@@ -1,0 +1,119 @@
+
+/*Font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* App Layout */
+body {
+  background-color: #262626;
+  color: #d8d8d8;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  font-size: 21px;
+  padding-left: 12px;
+}
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 12px;
+}
+a {
+  text-decoration: none;
+}
+.charts_bg{
+  background-color: #343332;
+}
+
+/* Chart Layout */
+.fix_charts {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+#bar_chart {
+  flex-grow: 1
+}
+#map_chart {
+  flex-grow: 1
+}
+
+/* left pane */
+.left_pane {
+  padding-left: 55px;
+  padding-top: 200px;
+}
+.fix_dropdown {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
+  background-color: #262626;
+  color: white;
+
+}
+
+.Select-control{
+  border: 0.5px solid #dbdbdb44;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{
+  color: #d8d8d8;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* For Mobile Phones and small screens ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@media only screen and (max-width: 768px) {
+  .four, .eight {
+      min-width: 100%;
+ }
+  h1, h2, h3, p {
+      text-align: center;
+ }
+  body {
+      display: block;
+      margin: 0px;
+      overflow-y: scroll;
+  }
+  .fix_charts {
+      padding: 0px;
+      width: 100%;
+      text-align: center;
+ }
+
+ .left_pane {
+    padding: 32px;
+ }
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626 !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343332;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white !important;
+}
+
