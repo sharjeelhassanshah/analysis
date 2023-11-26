@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import pandas as pd
 
 
-airport = pd.read_csv('./airtraffic.csv')
+airport = pd.read_csv('./airport.csv')
 airport.dropna(inplace=True)
 
 airport1 = airport[['state', 'lat', 'long']]
